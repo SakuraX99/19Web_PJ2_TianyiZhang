@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div class="register">
+    <p class="registertitle">Sign up to Fisher</p>
+    <form class="register" method="post" action="../php/register_check.php">
+        <p class="registerform">Username</p>
+        <input type="text" name="username" id="register_username" value="" onchange="register_username_check()" required><span id = "register_username_check">Username Required</span>
+        <p class="registerform">Email</p>
+        <input type="text" name="email" id="register_email" value="" onchange="register_email_check()" required><span id = "register_email_check">E-mail is Required</span>
+        <p class="registerform">Password</p>
+        <input type="password" name="password" id="register_password" value="" onchange="register_password_check()" required><span id = "register_password_check">Password Required</span>
+        <p class="registerform">Confirm Your Password</p>
+        <input type="password" name="password_confirm" id="register_password_confirm" value="" onchange="register_password_confirm_check()" required><span id = "register_password_confirm_check">Password Required</span><br>
+        <input class="button" type="submit" onclick="register_check()"/>
+    </form>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#"><img src="../img/instagram.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="../img/twitter.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="../img/youtube.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="../img/dribbble.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="../img/facebook.svg" class="img-fluid"></a></li>
+        </ul>
+    </div>
+    <p class="end">Copyright © 2017-2020 All Rights Reserved. 备案号：闽ICP备15216667932号-1</p>
+</footer>
+<ul class="rightbottom">
+    <div onclick="alert('图⽚已刷新')"><img src="../img/reload.jpg" class="reload"></div>
+    <a href="javascript:window.scrollTo( 0, 0 );"><img src="../img/top.jpg" class="top"></a>
+</ul>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.SuperSlide.2.1.js"></script>
+<script type="text/javascript" src='../js/script.js'></script>
+<script type="text/javascript" src="../js/login.js"></script>
+<script type="text/javascript" src="../js/register.js"></script>
+</body>
+</html>

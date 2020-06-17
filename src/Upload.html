@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div class="head">
+    <div class="navbox">
+        <!-- 侧边栏菜单 -->
+
+        <!-- 主菜单 -->
+        <div class="nav headrg" id="nav">
+            <ul class="nav_pc">
+                <li>
+                    <img src="../img/facebook.svg" class="headlogo" alt="logo">
+                </li>
+                <li>
+                    <a class="f_a" href="HomePage.php">Home</a>
+                </li>
+                <li>
+                    <a class="f_a" href="Browse.php">Browse</a>
+                </li>
+                <li>
+                    <a class="f_a" href="Search.php">Search</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidenav">
+            <label><i></i>My Account</label>
+            <ul class="side">
+                <li>
+                    <a href="Upload.php"><i class="side_t upload"></i>Upload</a>
+                </li>
+                <li>
+                    <a href="Myphotos.php"><i class="side_t photos"></i>My Photos</a>
+                </li>
+                <li>
+                    <a href="MyFavors.php"><i class="side_t favorite"></i>My Favorite</a>
+                </li>
+                <li>
+                    <a href="login.html"><i class="side_t login"></i>Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="uploadpart">
+    <p class="uploadtitle">Upload</p>
+    <form class="photoupload" method="post">
+        <div id="imgPreview">
+            <div id="prompt3">
+                <p>Haven't Upload yet</p>
+                <input type="file" id="file" class="filepath" onchange="changepic(this)"
+                       accept="image/jpg,image/jpeg,image/png,image/PNG">
+                <!--当vaule值改变时执行changepic函数，规定上传的文件只能是图片-->
+            </div>
+            <img src="#" id="img3"/>
+            <p class="uploadtip">Click middle of the box to Upload</p>
+        </div>
+        <div class="uploadinfo">
+            <p>Title:</p>
+            <textarea name="teatarea1"></textarea><br></div>
+        <div class="uploadinfo">
+            <p>Description:</p>
+            <textarea name="teatarea2"></textarea><br></div>
+        <div class="uploadinfo">
+            <p>Country:</p>
+            <textarea name="teatarea3"></textarea><br></div>
+        <div class="uploadinfo">
+            <p>City:</p>
+            <textarea name="teatarea4"></textarea><br></div>
+        <div onclick="alert('Upload Success!')"><input type="button" value="Submit"
+                                                       onclick="window.location.href='Myphotos.php'"/></div>
+
+    </form>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#"><img src="../img/instagram.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="../img/twitter.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="../img/youtube.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="../img/dribbble.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="../img/facebook.svg" class="img-fluid"></a></li>
+        </ul>
+    </div>
+    <p class="end">Copyright © 2017-2020 All Rights Reserved. 备案号：闽ICP备15216667932号-1</p>
+</footer>
+<ul class="rightbottom">
+    <div onclick="alert('图⽚已刷新')"><img src="../img/reload.jpg" class="reload"></div>
+    <a href="javascript:window.scrollTo( 0, 0 );"><img src="../img/top.jpg" class="top"></a>
+</ul>
+<script type="text/javascript">
+    function changepic() {
+        $("#prompt3").css("display", "none");
+        var reads = new FileReader();
+        f = document.getElementById('file').files[0];
+        reads.readAsDataURL(f);
+        reads.onload = function (e) {
+            document.getElementById('img3').src = this.result;
+            $("#img3").css("display", "block");
+        };
+    }
+</script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.SuperSlide.2.1.js"></script>
+<script type="text/javascript" src='../js/script.js'></script>
+</body>
+</html>

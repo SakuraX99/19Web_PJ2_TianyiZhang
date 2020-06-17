@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Broswer</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div class="head">
+    <div class="navbox">
+        <!-- 侧边栏菜单 -->
+
+        <!-- 主菜单 -->
+        <div class="nav headrg" id="nav">
+            <ul class="nav_pc">
+                <li>
+                    <img src="../img/facebook.svg" class="headlogo" alt="logo">
+                </li>
+                <li>
+                    <a class="f_a" href="HomePage.php">Home</a>
+                </li>
+                <li class="active">
+                    <a class="f_a" href="Browse.php">Browse</a>
+                </li>
+                <li>
+                    <a class="f_a" href="Search.php">Search</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidenav">
+            <label><i></i>My Account</label>
+            <ul class="side">
+                <li>
+                    <a href="Upload.php"><i class="side_t upload"></i>Upload</a>
+                </li>
+                <li>
+                    <a href="Myphotos.php"><i class="side_t photos"></i>My Photos</a>
+                </li>
+                <li>
+                    <a href="MyFavors.php"><i class="side_t favorite"></i>My Favorite</a>
+                </li>
+                <li>
+                    <a href="login.html"><i class="side_t login"></i>Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="broswer-main">
+    <ul>
+        <li class="side">
+            <div class="leftside">
+                <div id="search-box1">
+                    <form class="Titlesearch" action="#">
+                        <p>Search By Title</p>
+                        <input  class="Titlesearch" type="text" name="title" value="">
+                        <input class="imgsubmit" type="submit" src="../img/search.jpg" name="img" onclick="alert('Search')">
+                    </form>
+                </div>
+
+                <div class="HotContent">
+                    <p class="HotContent">Hot Content</p>
+                    <ul class="contentlist">
+                        <li><a class="content" href="#" onclick="alert('')">Scenery</a></li>
+                        <li><a class="content" href="#" onclick="alert('')">City</a></li>
+                        <li><a class="content" href="#" onclick="alert('')">People</a></li>
+                        <li><a class="content" href="#" onclick="alert('')">Animal</a></li>
+                        <li><a class="content" href="#" onclick="alert('')">Building</a></li>
+                        <li><a class="content" href="#" onclick="alert('')">Wonder</a></li>
+                    </ul>
+                </div>
+
+                <div class="HotContent">
+                    <p class="HotContent">Hot Country</p>
+                    <ul class="contentlist">
+                        <li><a class="content" href="#" onclick="alert('')">China</a></li>
+                        <li><a class="content" href="#" onclick="alert('')">Italy</a></li>
+                        <li><a class="content" href="#" onclick="alert('')">Japan</a></li>
+                        <li><a class="content" href="#" onclick="alert('')">South Korea</a></li>
+                        <li><a class="content" href="#" onclick="alert('')">US</a></li>
+                        <li><a class="content" href="#" onclick="alert('')">France</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="side">
+            <div class="rightside">
+                <div class="filter">
+                    <p class="filter">Filter</p>
+                    <div class="filteroptions">
+                        <form name="form1" action="" method="get">
+                            <select name="content" id="content" class='filter' msgEmpty="Filter by Content">
+                                <option value="">Scenery</option>
+                                <option value="">City</option>
+                                <option value="">People</option>
+                                <option value="">Animal</option>
+                                <option value="">Building</option>
+                                <option value="">Wonder</option>
+                            </select>
+
+                            <select name="country" id="country" class='filter' msgEmpty="Filter by Country"
+                                    onChange="set_city(this,this.form.city);">
+                                <option value="0">请选择</option>
+                                <option value="China">China</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Italy">Italy</option>
+                                <option value="America">America</option>
+                            </select>
+
+                            <select name="city" id="citys" class='filter' msgEmpty="Filter by City">
+                                <option value="">请选择</option>
+                            </select>
+                            <button class="searhbutton" onclick="alert('Filter')"><img src="../img/search.jpg"></button>
+                        </form>
+                    </div>
+                    <div class="filterresponse">
+                        <div class="photoelement">
+                            <ul class="sight">
+                                <li class="sight">
+                                    <a href="#"><div class="imgsight"><img src="../img/5855735700.jpg" onclick="window.location.href='Details.html'"></div></a>
+                                </li>
+                                <li class="sight">
+                                    <a href="#"><div class="imgsight"><img src="../img/5855735700.jpg" onclick="window.location.href='Details.html'"></div></a>
+                                </li>
+                                <li class="sight">
+                                    <a href="#"><div class="imgsight"><img src="../img/5855735700.jpg" onclick="window.location.href='Details.html'"></div></a>
+                                </li>
+                            </ul>
+                            <ul class="sight">
+                                <li class="sight">
+                                    <a href="#"><div class="imgsight"><img src="../img/5855735700.jpg" onclick="window.location.href='Details.html'"></div></a>
+                                </li>
+                                <li class="sight">
+                                    <a href="#"><div class="imgsight"><img src="../img/5855735700.jpg" onclick="window.location.href='Details.html'"></div></a>
+                                </li>
+                                <li class="sight">
+                                    <a href="#"><div class="imgsight"><img src="../img/5855735700.jpg" onclick="window.location.href='Details.html'"></div></a>
+                                </li>
+                            </ul>
+                            <ul class="sight">
+                                <li class="sight">
+                                    <a href="#"><div class="imgsight"><img src="../img/5855735700.jpg" onclick="window.location.href='Details.html'"></div></a>
+                                </li>
+                                <li class="sight">
+                                    <a href="#"><div class="imgsight"><img src="../img/5855735700.jpg" onclick="window.location.href='Details.html'"></div></a>
+                                </li>
+                                <li class="sight">
+                                    <a href="#"><div class="imgsight"><img src="../img/5855735700.jpg" onclick="window.location.href='Details.html'"></div></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="pasgeschanger"><li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<footer class="footer">
+    <div class="container">
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#"><img src="../img/instagram.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="../img/twitter.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="../img/youtube.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="../img/dribbble.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="#"><img src="../img/facebook.svg" class="img-fluid"></a></li>
+        </ul>
+    </div>
+    <p class="end">Copyright © 2017-2020 All Rights Reserved. 备案号：闽ICP备15216667932号-1</p>
+</footer>
+<ul class="rightbottom">
+    <div onclick="alert('图⽚已刷新')"><img src="../img/reload.jpg" class="reload"></div>
+    <a href="javascript:window.scrollTo( 0, 0 );"><img src="../img/top.jpg" class="top"></a>
+</ul>
+
+<script type="text/javascript">cities = new Object();
+cities['China'] = new Array('Shanghai', 'Kunming', 'Beijing', 'Yantai');
+cities['Japan'] = new Array('Tokyo', 'Osaka', 'Kamakura');
+cities['Italy'] = new Array('Roma', 'Milan', 'Venice', 'Florence');
+cities['America'] = new Array('New York', 'San Francisco', 'Washington');
+
+function set_city(country, city) {
+    var pv, cv;
+    var i, ii;
+
+    pv = country.value;
+    cv = city.value;
+
+    city.length = 1;
+
+    if (pv == '0') return;
+    if (typeof (cities[pv]) == 'undefined') return;
+
+    for (i = 0; i < cities[pv].length; i++) {
+        ii = i + 1;
+        city.options[ii] = new Option();
+        city.options[ii].text = cities[pv][i];
+        city.options[ii].value = cities[pv][i];
+    }
+}
+</script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.SuperSlide.2.1.js"></script>
+<script type="text/javascript" src='../js/script.js'></script>
+
+</body>
+</html>
