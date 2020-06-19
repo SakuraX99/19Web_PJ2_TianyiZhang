@@ -46,5 +46,4 @@ if( move_uploaded_file($file, $path . $fileName) ) {
 }else{
     echo "文件移动失败";
 }
-
 }

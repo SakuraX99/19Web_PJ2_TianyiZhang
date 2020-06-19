@@ -383,7 +383,7 @@ $hotThemes = $pdo->query("SELECT * FROM Theme order by Heat desc");
             var addele ='';
             for(;x<len;x++){
                 addele += '<li class="sight" id="img1">\n' +
-                    '<a href="#"><div class="imgsight"><img src='+ "'../travel-images/square-medium/" + result[x]+"'" +' onclick="imageToDetail(this)"></div></a></li>'
+                    '<a href="#"><div class="imgsight"><img src='+ "'../travel-images/large/" + result[x]+"'" +' onclick="imageToDetail(this)"></div></a></li>'
 
                 if((x%9+1)%3==0||x==len-1) {
                     let y = 0;

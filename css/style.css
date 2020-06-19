@@ -317,8 +317,23 @@ li.sight div {
     left: 10%;
 }
 
-li.sight div img{
+div.imgsight {
+    width: 80%;
+    height: 60%;
+    border: 0;
+    max-width: 250px;
+    max-height: 250px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    left: 10%;
+}
 
+div.imgsight img{
+    width: 150%;
+}
+
+li.sight div img{
     width: 150%;
 }
 

@@ -155,7 +155,7 @@ if(isset($_SESSION['Update'])){
         <div class="uploadinfo">
             <p>City:</p>
             <textarea id="City"><?php if(isset($_SESSION['Update'])){echo $city;}?></textarea><br></div>
-        <div ><input type="button" value="<?php if(isset($_SESSION['Update'])){echo "Modify";}else{echo "Update";}?>" onclick="<?php if(isset($_SESSION['Update'])){echo "upload2()";}else{echo "upload1()";}?>" style="height: 30px;border-radius: 6px;"/></div>
+        <div ><input type="button" value="<?php if(isset($_SESSION['Update'])){echo "Modify";}else{echo "Upload";}?>" onclick="<?php if(isset($_SESSION['Update'])){echo "upload2()";}else{echo "upload1()";}?>" style="height: 30px;border-radius: 6px;"/></div>
     </div>
 </div>
 
