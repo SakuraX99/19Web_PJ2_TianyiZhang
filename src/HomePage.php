@@ -131,15 +131,15 @@ for($i=0;$i<6;$i++) {
             </ul>
             <ul class="sight">
                 <li class="sight"><p class="sight"><?php echo $arrTitle[3];?></p>
-                    <div class="imgsight"><img src="<?php echo"../travel-images/large/".$arrPATH[3];?>" onclick="window.location.href='Details.html'"></div>
+                    <div class="imgsight"><img src="<?php echo"../travel-images/large/".$arrPATH[3];?>" onclick="imageToDetail(this)"></div>
                     <p class="sight"><?php echo $arrDescr[3];?></p>
                 </li>
                 <li class="sight"><p class="sight"><?php echo $arrTitle[4];?></p>
-                    <div class="imgsight"><img src="<?php echo"../travel-images/large/".$arrPATH[4];?>" onclick="window.location.href='Details.html'"></div>
+                    <div class="imgsight"><img src="<?php echo"../travel-images/large/".$arrPATH[4];?>" onclick="imageToDetail(this)"></div>
                     <p class="sight"><?php echo $arrDescr[4];?></p>
                 </li>
                 <li class="sight"><p class="sight"><?php echo $arrTitle[5];?></p>
-                    <div class="imgsight"><img src="<?php echo"../travel-images/large/".$arrPATH[5];?>" onclick="window.location.href='Details.html'"></div>
+                    <div class="imgsight"><img src="<?php echo"../travel-images/large/".$arrPATH[5];?>" onclick="imageToDetail(this)"></div>
                     <p class="sight"><?php echo $arrDescr[5];?></p>
                 </li>
             </ul>

@@ -90,7 +90,7 @@ register_email_check = function()
     }
     else
     {
-        patt = /^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/;;
+        patt = /^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/;
         if (patt.test(email1.value))
         {
             document.getElementById("register_email_check").innerHTML = "";
@@ -142,32 +142,4 @@ register_check = function ()
         window.location.href = "../src/register.html";
         return;
     }
-}
-register_close = function ()
-{
-    let register_window = document.getElementById("registerPanel");
-    let username1 = document.getElementById("register_username");
-    let password1 = document.getElementById("register_password");
-    let captcha = document.getElementById("register_captcha");
-    let address1 = document.getElementById("register_address");
-    let email1 = document.getElementById("register_email");
-    let telephone1 = document.getElementById("register_telephone");
-    let confirm_password1 = document.getElementById("register_password_confirm");
-    address1.value = "";
-    telephone1.value = "";
-    username1.value = "";
-    password1.value = "";
-    captcha.value = "";
-    confirm_password1.value = "";
-    email1.value = "";
-    register_username_check();
-    register_password_check();
-    register_password_confirm_check();
-    register_email_check();
-    register_window.hidden = true;
-}
-register_show = function ()
-{
-    let register_window = document.getElementById("registerPanel");
-    register_window.hidden = false;
 }

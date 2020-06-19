@@ -11,8 +11,8 @@ while ($row = $travelusers->fetch())
         if($postpassword == $password){
             $_SESSION['UserName'] = $username;
             $_SESSION['UID'] = $row['UID'];
-            echo $_SESSION['UID']."<br>";
-            echo $_SESSION['UserName']."<br>";
+//            echo $_SESSION['UID']."<br>";
+//            echo $_SESSION['UserName']."<br>";
             echo '<script>alert("Login Success!");window.location.href="../src/HomePage.php";</script>';
             return;
         }

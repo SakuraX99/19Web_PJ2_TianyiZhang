@@ -41,22 +41,35 @@ if(!isset($_SESSION['UID'])){
                 </li>
             </ul>
         </div>
-        <div class="sidenav">
-            <label><i></i>My Account</label>
-            <ul class="side">
-                <li>
-                    <a href="Upload.php"><i class="side_t upload"></i>Upload</a>
-                </li>
-                <li>
-                    <a href="Myphotos.php"><i class="side_t photos"></i>My Photos</a>
-                </li>
-                <li>
-                    <a href="MyFavors.php"><i class="side_t favorite"></i>My Favorite</a>
-                </li>
-                <li>
-                    <a href="login.html"><i class="side_t login"></i>Login</a>
-                </li>
-            </ul>
+        <div class="sidenav" style="color: white;position: relative;left: 25%;">
+
+            <?php
+            if(isset($_SESSION['UserName'])){
+                echo '<label><i></i><a style="color: white;position: relative;left: 25%;">'.$_SESSION['UserName'].'</a></label>';
+            }
+            else{
+                echo '<label><i></i><a href="login.html"style="color: white;position: relative;left: 25%;">Login</a></label>';
+            }
+            ?>
+            <?php
+            if(isset($_SESSION['UserName'])){
+                echo
+                '<ul class="side">
+                    <li>
+                        <a href="Upload.php"><i class="side_t upload"></i>Upload</a>
+                    </li>
+                    <li>
+                        <a href="Myphotos.php"><i class="side_t photos"></i>My Photos</a>
+                    </li>
+                    <li>
+                        <a href="MyFavors.php"><i class="side_t favorite"></i>My Favorite</a>
+                    </li>
+                    <li>
+                        <a href="../php/logout.php"
+                        ><i class="side_t login"></i>Logout
+                        </a>
+                    </li>
+                </ul>';} ?>
         </div>
     </div>
 </div>
