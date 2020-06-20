@@ -118,6 +118,7 @@ if(!isset($_SESSION['UID'])){
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/jquery.SuperSlide.2.1.js"></script>
 <script type="text/javascript" src='../js/script.js'></script>
+<script type="text/javascript" src='../js/image.js'></script>
 <script type="text/javascript">
     var result = new Array();
     var pathArr = new Array();

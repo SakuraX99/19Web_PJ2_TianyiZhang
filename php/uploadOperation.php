@@ -32,7 +32,7 @@ if(($selectCountry != null)&&($selectCity != null)){
 
 if($isCountryCityValid==0){
 //    echo '<script>alert("invaild country and city pair!");window.location.href="../src/Upload.php"</script>';
-    $_SESSION["invaild"] = "true";
+    $_SESSION["invalid"] = "true";
 }
 else {
     $CityCode = $selectCity['GeoNameID'];
